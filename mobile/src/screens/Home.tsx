@@ -40,6 +40,7 @@ export function Home() {
                             .from({ length: amountOfDaysToFill })
                             .map((_, i) => (
                                 <View
+                                    key={i}
                                     className="bg-zinc-900 rounded-lg border m-1 border-zinc-800"
                                     style={{ width: DAY_SIZE, height: DAY_SIZE }}>
                                 </View>
